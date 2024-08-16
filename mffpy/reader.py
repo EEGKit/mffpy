@@ -263,7 +263,8 @@ class Reader:
         }
 
     def get_physical_samples_from_epoch(self, epoch: xml_files.Epoch,
-                                        t0: float = 0.0, dt: Optional[float] = None,
+                                        t0: float = 0.0,
+                                        dt: Optional[float] = None,
                                         channels: Optional[List[str]] = None
                                         ) -> Dict[str,
                                                   Tuple[np.ndarray, float]]:
